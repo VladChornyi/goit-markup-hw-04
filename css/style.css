@@ -74,6 +74,7 @@ body {
 .header {
   background-color: #ffffff;
 }
+
 .header-content {
   display: flex;
   align-items: center;
@@ -130,6 +131,22 @@ body {
 }
 .site-nav .link.current {
   color: var(--accent-color);
+}
+.ikon-envelope,
+.ikon-phone {
+  margin-right: 10px;
+  fill: #757575;
+}
+.header-address-item .link:hover .ikon-envelope,
+.header-address-item .link:focus .ikon-envelope,
+.header-address-item .link:hover .ikon-phone,
+.header-address-item .link:focus .ikon-phone {
+  fill: var(--accent-color);
+}
+
+.header-address-item .link {
+  display: flex;
+  align-items: center;
 }
 
 /*address*/
@@ -216,6 +233,14 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
+.advantage-ikon {
+  padding: 25px 100px;
+  text-align: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
 .advantage .item {
   flex-basis: calc((100% - 30px * 4) / 4);
   margin-left: 30px;
@@ -283,6 +308,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.teammate {
+  margin-bottom: 30px;
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -295,16 +323,80 @@ body {
   margin-left: 30px;
 }
 
-.teammate {
-  margin-bottom: 30px;
-}
-.team-card .position {
+.social-list-light {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-link-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.social-link-light:hover,
+.social-link-light:focus {
+  background-color: var(--accent-color);
+}
+.social-link-light:hover .ikon-instagram,
+.social-link-light:hover .ikon-twitter,
+.social-link-light:hover .ikon-facebook,
+.social-link-light:hover .ikon-linkedin {
+  fill: #ffffff;
+}
+
+.team-card .position {
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/*===========================CLIENTS=========================*/
+.client .title {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-item {
+  display: flex;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+.client-link:hover .ikon-client,
+.client-link:focus .ikon-client {
+  fill: var(--accent-color);
 }
 
 /*=============================FOOTER===============================*/
@@ -356,6 +448,43 @@ body {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
+}
+.footer .container {
+  display: flex;
+}
+.social-list-dark {
+  display: flex;
+}
+.social-list-dark .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link {
+  padding-top: 72px;
+  margin-left: 70px;
+}
+.footer-social-link .title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-link-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+.social-link-dark:hover,
+.social-link-dark:focus {
+  background-color: var(--accent-color);
 }
 
 /*======================PORTFOLIO.HTML========================*/
