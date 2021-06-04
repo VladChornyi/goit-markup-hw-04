@@ -187,6 +187,7 @@ body {
   max-width: 1600px;
   height: 600px;
   background-position: center;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
