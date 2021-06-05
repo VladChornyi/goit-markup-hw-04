@@ -235,8 +235,10 @@ body {
   margin-top: -30px;
 }
 .advantage-ikon {
-  padding: 25px 100px;
-  text-align: center;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
 
@@ -348,7 +350,11 @@ body {
 .social-link-light:hover .ikon-instagram,
 .social-link-light:hover .ikon-twitter,
 .social-link-light:hover .ikon-facebook,
-.social-link-light:hover .ikon-linkedin {
+.social-link-light:hover .ikon-linkedin,
+.social-link-light:focus .ikon-instagram,
+.social-link-light:focus .ikon-twitter,
+.social-link-light:focus .ikon-facebook,
+.social-link-light:focus .ikon-linkedin {
   fill: #ffffff;
 }
 
